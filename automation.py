@@ -23,5 +23,8 @@ clicksSorteren.click();
 clicksAanbiedingen = driver.find_element(By.CSS_SELECTOR, '.ISbUTm:nth-child(5) .UEJYaG')
 clicksAanbiedingen.click();
 
+#Selects a product
+
+
 # Closes the current window
 driver.close()
