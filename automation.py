@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time 
 
+# Starts Chrome
 driver = webdriver.Chrome()
 driver.get('https://www.zalando.nl/outlet-heren/?sale=true')
 
@@ -19,12 +20,12 @@ clickAllfilter.click();
 clicksSorteren = driver.find_element(By.CSS_SELECTOR, '.DJxzzA:nth-child(1) .piG9a1')
 clicksSorteren.click();
 
-#Clicks Aanbiedingen
+# Clicks Aanbiedingen
 clicksAanbiedingen = driver.find_element(By.CSS_SELECTOR, '.ISbUTm:nth-child(5) .UEJYaG')
 clicksAanbiedingen.click();
 
-#Selects a product
-
+# Waits 5 seconds
+time.sleep(5)
 
 # Closes the current window
 driver.close()
