@@ -21,3 +21,7 @@ searchMe.send_keys("Nicolas Cabane");
 time.sleep(2)
 searchBtn = driver.find_element(By.CSS_SELECTOR, '#search-icon-legacy')
 searchBtn.click();
+
+# Closes the browser
+driver.close();
+
