@@ -1,3 +1,4 @@
+from locale import delocalize
 from textwrap import fill
 from webbrowser import Chrome
 from selenium import webdriver
@@ -38,6 +39,85 @@ seLand.click();
 time.sleep(2)
 seLand.click();
 
+# Selects country type of consumer
+time.sleep(2)
+seCnsmr = driver.find_element(By.ID, 'zakelijk')
+seCnsmr.click();
+time.sleep(2)
+seCnsmr.click();
+
+# Fills in first name
+time.sleep(2)
+fillname = driver.find_element(By.ID, 'voornaam')
+fillname.click();
+fillname.send_keys("Jan")
+
+# Fill Last name
+time.sleep(2)
+fillLast = driver.find_element(By.ID, 'achternaam')
+fillLast.send_keys('Testane')
+
+# Fills post code
+time.sleep(2)
+postCode = driver.find_element(By.ID, 'postcode')
+postCode.send_keys("1010AA")
+
+# Fills house number
+time.sleep(2)
+huisNum = driver.find_element(By.ID, 'huisnummer')
+huisNum.send_keys("11")
+
+# Fills apartment number or letter
+time.sleep(2)
+aptNum = driver.find_element(By.ID, 'toevoeging')
+aptNum.send_keys("A")
+
+# Fills street name
+time.sleep(2)
+stName = driver.find_element(By.ID, "adres")
+stName.send_keys("Testanekade")
+
+# Fills city
+time.sleep(2)
+fillCity = driver.find_element(By.ID, 'plaats')
+fillCity.send_keys("Amsterdam")
+
+# Fills phone number
+time.sleep(2)
+phoneNmr = driver.find_element(By.ID,'telefoon')
+phoneNmr.send_keys("06123456")
+
+# Selects delivery date
+time.sleep(2)
+delDate = driver.find_element(By.ID, 'leverdatum')
+delDate.click();
+time.sleep(2)
+delDate.click();
+
+# Selects delivery or collection place
+time.sleep(2)
+delCol = driver.find_element(By.ID, 'wl_alt0')
+delCol.click();
+time.sleep(2)
+delCol.click();
+
+# Selects payment method iDEAL
+time.sleep(2)
+selPay = driver.find_element(By.ID, 'betaaltype_bankid')
+
+# Selects iDeal bank
+time.sleep(2)
+
+# Accepts receiving news and offers
+time.sleep(2)
+
+# Accepts terms and conditions
+time.sleep(2)
+
+# Clicks payment button
+time.sleep(2)
+
+# Closes the browser
 
 
 
