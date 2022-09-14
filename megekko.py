@@ -101,23 +101,5 @@ delCol.click();
 time.sleep(2)
 delCol.click();
 
-# Selects payment method iDEAL
-time.sleep(2)
-selPay = driver.find_element(By.ID, 'betaaltype_bankid')
-
-# Selects iDeal bank
-time.sleep(2)
-
-# Accepts receiving news and offers
-time.sleep(2)
-
-# Accepts terms and conditions
-time.sleep(2)
-
-# Clicks payment button
-time.sleep(2)
-
 # Closes the browser
-
-
-
+driver.close()
