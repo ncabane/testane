@@ -13,4 +13,6 @@ time.sleep(2)
 accCookie = driver.find_element(By.XPATH, '//button[contains(.,"Accept")]')
 accCookie.click();
 
-# 
+# Scrolls to the end of the page
+time.sleep(2)
+driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
