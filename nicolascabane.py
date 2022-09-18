@@ -86,9 +86,5 @@ sendBtn = driver.find_element(By.ID, 'wpforms-submit-52')
 sendBtn.click();
 time.sleep(4)
 
-# Generates a HTML report
-def test_SeleniumTest():
-    print("Report")
-
 # Closes the browser
 driver.close()
