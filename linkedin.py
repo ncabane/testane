@@ -16,3 +16,7 @@ accCookie.click();
 # Scrolls to the end of the page
 time.sleep(2)
 driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+# Clicks on Learning
+clkLearn = driver.find_element(By.LINK_TEXT, 'Learning')
+clkLearn.click();
