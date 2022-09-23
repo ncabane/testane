@@ -20,3 +20,7 @@ driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 # Clicks on Learning
 clkLearn = driver.find_element(By.LINK_TEXT, 'Learning')
 clkLearn.click();
+
+# Waits 3 seconds and closes the browser
+time.sleep(3)
+driver.close();
