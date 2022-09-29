@@ -1,4 +1,5 @@
 from audioop import add
+from turtle import st
 from webbrowser import Chrome
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -29,7 +30,23 @@ time.sleep(1)
 addCart = driver.find_element(By.XPATH,'//*[@id="center_column"]/ul/li/div/div[2]/div[2]/a[1]')
 addCart.click();
 
-# Proceeds to checkout
+# Clicks on Proceeds to checkout
 time.sleep(3)
-proCheck = driver.find_element(By.LINK_TEXT, 'Proceed to checkout')
+proCheck = driver.find_element(By.XPATH, '//div[@id="layer_cart"]/div/div[2]/div[4]/a/span')
 proCheck.click();
+
+# Starts checkout process
+time.sleep(1)
+stCheck = driver.find_element(By.CSS_SELECTOR, '.standard-checkout > span')
+stCheck.click();
+
+# Account creation - Email
+time.sleep(1)
+accEmail = driver.find_element(By.ID, 'email_create')
+accEmail.click();
+accEmail.send_keys('untrux@gmail.com')
+
+# Account creation - Proceed
+time.sleep(1)
+accProc = driver.find_element(By.XPATH, '//button[@id="SubmitCreate"]/span')
+accProc.click();
