@@ -50,3 +50,6 @@ accEmail.send_keys('untrux@gmail.com')
 time.sleep(1)
 accProc = driver.find_element(By.XPATH, '//button[@id="SubmitCreate"]/span')
 accProc.click();
+
+# After the existing account erorr, closes the browser
+driver.close();
