@@ -17,3 +17,10 @@ accCookie.click();
 srcBar = driver.find_element(By.XPATH, '//*[@id="gh-ac"]')
 srcBar.send_keys('backpack')
 srcBar.send_keys(Keys.ENTER);
+
+# Clicks on Buy it Now category
+buyNow = driver.find_element(By.LINK_TEXT,'Buy It Now')
+buyNow.click();
+
+# Closes de browser
+driver.close();
