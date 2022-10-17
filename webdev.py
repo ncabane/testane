@@ -22,6 +22,5 @@ runUrl.click();
 
 # Waits for the result and clicks on View report
 time.sleep(15)
-viewRep = driver.find_element(By.LINK_TEXT, 'View Report')
+viewRep = driver.find_element(By.XPATH, '//*[@id="main"]/section[2]/div/web-lighthouse-viewer/div[1]/span[1]/a')
 viewRep.click();
- 
