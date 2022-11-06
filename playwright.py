@@ -8,10 +8,10 @@ driver.get('https://playwright.dev/')
 
 # Waits 1 second and then clicks on Get Started
 time.sleep(1)
-acceptCookie = driver.find_element(By.CSS_SELECTOR, '.lightToggleIcon_pyhR')
-acceptCookie.click();
+opensGetStarted = driver.find_element(By.LINK_TEXT, 'GET STARTED')
+opensGetStarted.click();
 
-# Turns dark mode on
+# Waits 1 second and then clicks How to Install
 time.sleep(1)
-darkMode = driver.find_element(By.XPATH, '/html/body/div/nav/div[1]/div[2]/div[1]/button/svg[1]')
-darkMode.click();
+howToinstall = driver.find_element(By.LINK_TEXT, 'How to install Playwright')
+howToinstall.click();
